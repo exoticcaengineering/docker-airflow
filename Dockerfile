@@ -51,7 +51,7 @@ RUN set -ex \
         netcat \
         locales \
         awscli \
-        postgresql-client-common \
+        postgresql-client-11 \
         pigz \
     && sed -i 's/^# en_US.UTF-8 UTF-8$/en_US.UTF-8 UTF-8/g' /etc/locale.gen \
     && locale-gen \
